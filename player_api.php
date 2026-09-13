@@ -26,7 +26,7 @@ if ($action == 'get_live_streams') {
     // Default Authentication Response
     echo json_encode([
         "user_info" => ["username" => "demo", "status" => "Active", "exp_date" => "1999999999"],
-        "server_info" => ["url" => "http://" . $_SERVER['HTTP_HOST'], "port" => "80"]
+        "server_info" => ["url" => "https://" . $_SERVER['HTTP_HOST'], "port" => "80"]
     ]);
 }
 ?>
