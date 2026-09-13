@@ -1,7 +1,11 @@
 <?php
 header('Content-Type: application/json');
 
-$action = isset($_GET['action']) ? $_GET['action'] : '';
+$action = isset($_GET['action']) ? $_GET['action'] : 'auth';
+$user = isset($_GET['username']) ? $_GET['username'] : 'unknown';
+
+// Log the incoming request
+error_log("IPTV Request - User: $user, Action: $action");
 
 if ($action == 'get_live_streams') {
     echo json_encode([
@@ -23,7 +27,6 @@ if ($action == 'get_live_streams') {
         ]
     ]);
 } else {
-    // Default Authentication Response
     echo json_encode([
         "user_info" => ["username" => "demo", "status" => "Active", "exp_date" => "1999999999"],
         "server_info" => ["url" => "https://" . $_SERVER['HTTP_HOST'], "port" => "443"]
