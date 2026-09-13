@@ -11,6 +11,7 @@ if ($action == 'get_live_streams') {
     error_log("Found Action: $action");
     echo json_encode([
         [
+            "category_id" => "1000",
             "stream_id" => 1,
             "name" => "NASA TV",
             "stream_type" => "live",
@@ -21,6 +22,7 @@ if ($action == 'get_live_streams') {
     error_log("Found Action: $action");
     echo json_encode([
         [
+            "category_id" => "3000",
             "stream_id" => 100,
             "name" => "Night of the Living Dead",
             "stream_type" => "movie",
@@ -32,10 +34,31 @@ if ($action == 'get_live_streams') {
     error_log("Found Action: $action");
 } elseif ($action == 'get_vod_categories') {
     error_log("Found Action: $action");
+    echo json_encode([
+        [
+            "category_id" => "3000",
+            "category_name" => "Oldies",
+            "parent_id" => 0
+        ]
+    ]);    
 } elseif ($action == 'get_live_categories') {
     error_log("Found Action: $action");
+    echo json_encode([
+        [
+            "category_id" => "1000",
+            "category_name" => "Public Broadcast",
+            "parent_id" => 0
+        ]
+    ]);
 } elseif ($action == 'get_series_categories') {
     error_log("Found Action: $action");
+    echo json_encode([
+        [
+            "category_id" => "2000",
+            "category_name" => "Oldies",
+            "parent_id" => 0
+        ]
+    ]);
 } else {
     echo json_encode([
         "user_info" => ["username" => "demo", "status" => "Active", "exp_date" => "1999999999"],
