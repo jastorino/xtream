@@ -8,6 +8,7 @@ $user = isset($_GET['username']) ? $_GET['username'] : 'unknown';
 error_log("IPTV Request - User: $user, Action: $action");
 
 if ($action == 'get_live_streams') {
+    error_log("Found Action: $action");
     echo json_encode([
         [
             "stream_id" => 1,
@@ -17,6 +18,7 @@ if ($action == 'get_live_streams') {
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
+    error_log("Found Action: $action");
     echo json_encode([
         [
             "stream_id" => 100,
@@ -26,6 +28,14 @@ if ($action == 'get_live_streams') {
             "direct_source" => "<unsafe_url>https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4</unsafe_url>"
         ]
     ]);
+} elseif ($action == 'get_series') {
+    error_log("Found Action: $action");
+} elseif ($action == 'get_vod_categories') {
+    error_log("Found Action: $action");
+} elseif ($action == 'get_live_categories') {
+    error_log("Found Action: $action");
+} elseif ($action == 'get_series_categories') {
+    error_log("Found Action: $action");
 } else {
     echo json_encode([
         "user_info" => ["username" => "demo", "status" => "Active", "exp_date" => "1999999999"],
