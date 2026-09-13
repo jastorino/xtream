@@ -1,0 +1,6 @@
+[
+  { "stream_id": 100, "name": "Night of the Living Dead", "stream_type": "movie", "container_extension": "mp4", "direct_source": "<unsafe_url>https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4</unsafe_url>" }
+],
+[
+  { "stream_id": 101, "TV Show Title", "stream_type": "series", "container_extension": "mp4", "direct_source": "<unsafe_url>https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4</unsafe_url>" }
+]
