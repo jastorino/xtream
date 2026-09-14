@@ -32,15 +32,15 @@ if ($action == 'get_live_streams') {
             "name" => "DW English",
             "stream_type" => "live",
             "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/9/93/Deutsche_Welle_logo.svg",
-            "direct_source" => "<unsafe_url>https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8</unsafe_url>"
+            "direct_source" => "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8"
         ],
         [
             "category_id" => "1000",
             "stream_id" => 4,
             "name" => "France 24 English",
             "stream_type" => "live",
-            "stream_icon" => "<unsafe_url>https://upload.wikimedia.org/wikipedia/commons/b/b5/France_24_logo.svg</unsafe_url>",
-            "direct_source" => "<unsafe_url>https://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master.m3u8</unsafe_url>"
+            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/b/b5/France_24_logo.svg",
+            "direct_source" => "https://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master.m3u8"
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
