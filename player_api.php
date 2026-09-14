@@ -184,24 +184,25 @@ if ($action == 'get_live_streams') {
                             "title" => "A Man's Teeth are not his Own", 
                             "season" => 1, 
                             "episode_num" => 1, 
-                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/A_MANS_TEETH_ARE_NOT_HIS_OWN.mp4"]
+                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/A_MANS_TEETH_ARE_NOT_HIS_OWN.mp4"
                         ],
                         [
                             "id" => 500012, 
                             "title" => "Give me your Walls", 
                             "season" => 1, 
                             "episode_num" => 2, 
-                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/GIVE_ME_YOUR_WALLS.mp4"]
+                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/GIVE_ME_YOUR_WALLS.mp4"
                         ],
                         [
                             "id" => 500013, 
                             "title" => "Hustling the Hustler", 
                             "season" => 1, 
                             "episode_num" => 3, 
-                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/HUSTLING_THE_HUSTLER.mp4"]
+                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/HUSTLING_THE_HUSTLER.mp4"
                         ]
 
                     ]
+                ]
             ];
             break;
         case 5002: // Bonanza
