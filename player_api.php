@@ -103,13 +103,6 @@ if ($action == 'get_live_streams') {
         ],
         [
             "category_id" => "2000",
-            "series_id" => 5002,
-            "name" => "Bonanza",
-            "cover" => "https://archive.org/services/img/BonanzaTheBloodLine",
-            "plot" => "The adventures of the Cartwright family on their Nevada ranch."
-        ],
-        [
-            "category_id" => "2000",
             "series_id" => 5003,
             "name" => "The Lucy Show",
             "cover" => "https://resizing.flixster.com/eHarJ7bCr-YokoVSeOWGcano2T4=/164x246/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p507901_b_v10_ad.jpg",
@@ -203,15 +196,6 @@ if ($action == 'get_live_streams') {
 
                     ]
                 ]
-            ];
-            break;
-        case 5002: // Bonanza
-            $response = [
-                "info" => ["name" => "Bonanza", "plot" => "The adventures of the Cartwright family."],
-                "seasons" => [
-                    [
-                        "season_number" => 1, "episode_count" => 1]],
-                "episodes" => ["1" => [["id" => 50021, "title" => "The Blood Line", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/BonanzaTheBloodLine/BonanzaTheBloodLine.mp4"]]]
             ];
             break;
         case 5003: // The Lucy Show
