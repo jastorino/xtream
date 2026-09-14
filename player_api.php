@@ -62,7 +62,17 @@ if ($action == 'get_live_streams') {
             "container_extension" => "mp4",
             "stream_icon" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif",
             "direct_source" => "https://dn600307.us.archive.org/0/items/MyManGodfrey1936/MyManGodfrey1936_512kb.mp4"
+        ],
+        [
+            "category_id" => "3000",
+            "stream_id" => 101,
+            "name" => "Kansas City Confidential",
+            "stream_type" => "movie",
+            "container_extension" => "mp4",
+            "stream_icon" => "https://images.justwatch.com/poster/134524696/s332/kansas-city-confidential.avif",
+            "direct_source" => "https://dn720304.ca.archive.org/0/items/kansas-city-confidential-1952_202307/Kansas%20City%20Confidential%20%281952%29.mp4"
         ]
+
     ]);
 } elseif ($action == 'get_vod_info') {
     $vod_id = isset($_GET['vod_id']) ? $_GET['vod_id'] : 0;
@@ -77,6 +87,18 @@ if ($action == 'get_live_streams') {
                 "genre" => "Comedy, Romance",
                 "duration" => "93 min",
                 "movie_image" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif"
+            ]
+        ]);    
+        break;        
+    case '101':
+        echo json_encode([
+            "info" => [
+                "plot" => "A down-on-his-luck ex-GI finds himself framed for an armored car robbery. When he's finally released for lack of evidence--after having been beaten up and tortured by the police--he sets out to discover who set him up, and why. The trail leads him into Mexico and a web of hired killers and corrupt cops.",
+                "releasedate" => "1952",
+                "rating" => "7.3",
+                "genre" => "Crime, Drama, Mystery & Thriller, Organized Crime",
+                "duration" => "100 min",
+                "movie_image" => "https://images.justwatch.com/poster/134524696/s332/kansas-city-confidential.avif"
             ]
         ]);    
         break;        
