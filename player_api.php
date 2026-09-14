@@ -86,45 +86,43 @@ if ($action == 'get_live_streams') {
     }
 } elseif ($action == 'get_series') {
     error_log("Found Action: $action");
-    case 'get_series':
-        echo json_encode([
-            [
-                "category_id" => "2000",
-                "series_id" => 5000,
-                "name" => "The Beverly Hillbillies",
-                "cover" => "https://archive.org/services/img/TheBeverlyHillbilliesTheClampettsStrikeOil",
-                "plot" => "A poor backwoods family strikes oil and moves to Beverly Hills."
-            ],
-            [
-                "category_id" => "2000",
-                "series_id" => 5001,
-                "name" => "The Dick Van Dyke Show",
-                "cover" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
-                "plot" => "The misadventures of a TV writer both at work and at home."
-            ],
-            [
-                "category_id" => "2000",
-                "series_id" => 5002,
-                "name" => "Bonanza",
-                "cover" => "https://archive.org/services/img/BonanzaTheBloodLine",
-                "plot" => "The adventures of the Cartwright family on their Nevada ranch."
-            ],
-            [
-                "category_id" => "2000",
-                "series_id" => 5003,
-                "name" => "The Lucy Show",
-                "cover" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
-                "plot" => "The comic misadventures of a widow and her friend."
-            ],
-            [
-                "category_id" => "2000",
-                "series_id" => 5004,
-                "name" => "Sherlock Holmes (1954)",
-                "cover" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
-                "plot" => "The classic detective solves mysteries in Victorian London."
-            ]
-        ]);
-        break;
+    echo json_encode([
+        [
+            "category_id" => "2000",
+            "series_id" => 5000,
+            "name" => "The Beverly Hillbillies",
+            "cover" => "https://archive.org/services/img/TheBeverlyHillbilliesTheClampettsStrikeOil",
+            "plot" => "A poor backwoods family strikes oil and moves to Beverly Hills."
+        ],
+        [
+            "category_id" => "2000",
+            "series_id" => 5001,
+            "name" => "The Dick Van Dyke Show",
+            "cover" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
+            "plot" => "The misadventures of a TV writer both at work and at home."
+        ],
+        [
+            "category_id" => "2000",
+            "series_id" => 5002,
+            "name" => "Bonanza",
+            "cover" => "https://archive.org/services/img/BonanzaTheBloodLine",
+            "plot" => "The adventures of the Cartwright family on their Nevada ranch."
+        ],
+        [
+            "category_id" => "2000",
+            "series_id" => 5003,
+            "name" => "The Lucy Show",
+            "cover" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
+            "plot" => "The comic misadventures of a widow and her friend."
+        ],
+        [
+            "category_id" => "2000",
+            "series_id" => 5004,
+            "name" => "Sherlock Holmes (1954)",
+            "cover" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
+            "plot" => "The classic detective solves mysteries in Victorian London."
+        ]
+    ]);
 } elseif ($action == 'get_series_info') {
 case 'get_series_info':
         $series_id = isset($_GET['series_id']) ? (int)$_GET['series_id'] : 0;
@@ -170,7 +168,6 @@ case 'get_series_info':
         }
         
         echo json_encode($response);
-        break;    
 }
 } elseif ($action == 'get_vod_categories') {
     error_log("Found Action: $action");
