@@ -71,7 +71,17 @@ if ($action == 'get_live_streams') {
             "container_extension" => "mp4",
             "stream_icon" => "https://images.justwatch.com/poster/134524696/s332/kansas-city-confidential.avif",
             "direct_source" => "https://dn720304.ca.archive.org/0/items/kansas-city-confidential-1952_202307/Kansas%20City%20Confidential%20%281952%29.mp4"
+        ],
+        [
+            "category_id" => "3000",
+            "stream_id" => 102,
+            "name" => "House On Hunted Hill",
+            "stream_type" => "movie",
+            "container_extension" => "mp4",
+            "stream_icon" => "https://images.justwatch.com/poster/354328131/s332/house-on-haunted-hill-1.avif",
+            "direct_source" => "https://dn720307.ca.archive.org/0/items/house-of-hunted-hill-4-k/HouseOfHuntedHill4K.mp4"
         ]
+
 
     ]);
 } elseif ($action == 'get_vod_info') {
@@ -99,6 +109,18 @@ if ($action == 'get_live_streams') {
                 "genre" => "Crime, Drama, Mystery & Thriller, Organized Crime",
                 "duration" => "100 min",
                 "movie_image" => "https://images.justwatch.com/poster/134524696/s332/kansas-city-confidential.avif"
+            ]
+        ]);    
+        break;        
+    case '102':
+        echo json_encode([
+            "info" => [
+                "plot" => "A down-on-his-luck ex-GI finds himself framed for an armored car robbery. When he's finally released for lack of evidence--after having been beaten up and tortured by the police--he sets out to discover who set him up, and why. The trail leads him into Mexico and a web of hired killers and corrupt cops.",
+                "releasedate" => "1952",
+                "rating" => "6.7",
+                "genre" => "Crime, Horror, Mystery & Thriller, Paranormal",
+                "duration" => "75 min",
+                "movie_image" => "https://images.justwatch.com/poster/354328131/s332/house-on-haunted-hill-1.avif"
             ]
         ]);    
         break;        
