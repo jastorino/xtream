@@ -13,6 +13,14 @@ if ($action == 'get_live_streams') {
         [
             "category_id" => "1000",
             "stream_id" => 1,
+            "name" => "NASA TV",
+            "stream_type" => "live",
+            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg",
+            "direct_source" => "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8"
+        ],
+        [
+            "category_id" => "1000",
+            "stream_id" => 2,
             "name" => "Red Bull TV",
             "stream_type" => "live",
             "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/3/34/Red_Bull_TV_logo.svg",
