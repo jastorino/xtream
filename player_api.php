@@ -160,7 +160,7 @@ if ($action == 'get_live_streams') {
                         ],
                         [
                             "id" => 50038, 
-                            "title" => "Getting Settled", 
+                            "title" => "Hair-Raising Holiday", 
                             "season" => 2, 
                             "episode_num" => 2, 
                             "direct_source" => "https://dn800200.us.archive.org/0/items/1ce-6aa-4d-1419f-3ea-53108b-15c-5179948-360p/11fdbb529bd768372fe784c9dee5357e-360p.mp4"
