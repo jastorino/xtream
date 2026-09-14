@@ -28,7 +28,7 @@ if ($action == 'get_live_streams') {
             "stream_type" => "movie",
             "container_extension" => "mp4",
             "stream_icon" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif",
-            "direct_source" => "<unsafe_url>https://dn600307.us.archive.org/0/items/MyManGodfrey1936/MyManGodfrey1936_512kb.mp4</unsafe_url>"
+            "direct_source" => "https://dn600307.us.archive.org/0/items/MyManGodfrey1936/MyManGodfrey1936_512kb.mp4"
         ]
     ]);
 } elseif ($action == 'get_vod_info') {
