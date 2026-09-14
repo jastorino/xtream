@@ -167,7 +167,6 @@ if ($action == 'get_live_streams') {
     }
     
     echo json_encode($response);
-}
 } elseif ($action == 'get_vod_categories') {
     error_log("Found Action: $action");
     echo json_encode([
