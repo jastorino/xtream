@@ -25,6 +25,14 @@ if ($action == 'get_live_streams') {
             "stream_type" => "live",
             "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/3/34/Red_Bull_TV_logo.svg",
             "direct_source" => "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
+        ],
+        [
+            "category_id" => "1000",
+            "stream_id" => 3,
+            "name" => "DW English",
+            "stream_type" => "live",
+            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/9/93/Deutsche_Welle_logo.svg",
+            "direct_source" => "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8"
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
