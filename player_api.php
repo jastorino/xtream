@@ -91,35 +91,35 @@ if ($action == 'get_live_streams') {
             "category_id" => "2000",
             "series_id" => 5000,
             "name" => "The Beverly Hillbillies",
-            "stream_icon" => "https://archive.org/services/img/TheBeverlyHillbilliesTheClampettsStrikeOil",
+            "cover" => "https://upload.wikimedia.org/wikipedia/en/4/4e/The_Beverly_Hillbillies.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
             "plot" => "A poor backwoods family strikes oil and moves to Beverly Hills."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5001,
             "name" => "The Dick Van Dyke Show",
-            "stream_icon" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
+            "cover" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
             "plot" => "The misadventures of a TV writer both at work and at home."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5002,
             "name" => "Bonanza",
-            "stream_icon" => "https://archive.org/services/img/BonanzaTheBloodLine",
+            "cover" => "https://archive.org/services/img/BonanzaTheBloodLine",
             "plot" => "The adventures of the Cartwright family on their Nevada ranch."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5003,
             "name" => "The Lucy Show",
-            "stream_icon" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
+            "cover" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
             "plot" => "The comic misadventures of a widow and her friend."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5004,
             "name" => "Sherlock Holmes (1954)",
-            "stream_icon" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
+            "cover" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
             "plot" => "The classic detective solves mysteries in Victorian London."
         ]
     ]);
