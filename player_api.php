@@ -133,7 +133,27 @@ if ($action == 'get_live_streams') {
             $response = [
                 "info" => ["name" => "The Beverly Hillbillies", "plot" => "A poor backwoods family strikes oil."],
                 "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                "episodes" => ["1" => [["id" => 50001, "title" => "The Clampetts Strike Oil", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheBeverlyHillbilliesTheClampettsStrikeOil/TheBeverlyHillbilliesTheClampettsStrikeOil.mp4"]]]
+                "episodes" => [
+                    "1" => [
+                        [
+                            "id" => 50001, 
+                            "title" => "The Clampetts Strike Oil", 
+                            "season" => 1, 
+                            "episode_num" => 1, 
+                            "direct_source" => "https://dn710007.ca.archive.org/0/items/731d-0c-436b-6236618f-110f-67a-65cb-9d-0-360p/00efdd5717132ce3a95944dd2f83dba6-360p.mp4"
+                        ]
+                    ],
+                    "2" => [
+                        [
+                            "id" => 50002, 
+                            "title" => "Getting Settled", 
+                            "season" => 1, 
+                            "episode_num" => 2, 
+                            "direct_source" => "https://dn710007.ca.archive.org/0/items/731d-0c-436b-6236618f-110f-67a-65cb-9d-0-360p/0570d5a39fca358ee78cd3a7e3b1b30e-360p.mp4"
+                        ]
+                    ]
+
+                ]
             ];
             break;
         case 5001: // The Dick Van Dyke Show
