@@ -15,7 +15,8 @@ if ($action == 'get_live_streams') {
             "stream_id" => 1,
             "name" => "NASA TV",
             "stream_type" => "live",
-            "direct_source" => "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-Public/master.m3u8"
+            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg",
+            "direct_source" => "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8"
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
