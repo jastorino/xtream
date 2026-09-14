@@ -80,9 +80,16 @@ if ($action == 'get_live_streams') {
             "container_extension" => "mp4",
             "stream_icon" => "https://images.justwatch.com/poster/354328131/s332/house-on-haunted-hill-1.avif",
             "direct_source" => "https://dn720307.ca.archive.org/0/items/house-of-hunted-hill-4-k/HouseOfHuntedHill4K.mp4"
+        ],
+        [
+            "category_id" => "3000",
+            "stream_id" => 103,
+            "name" => "Sunrise: A Song of Two Humans",
+            "stream_type" => "movie",
+            "container_extension" => "mp4",
+            "stream_icon" => "https://images.justwatch.com/poster/302413789/s332/sunrise-a-song-of-two-humans.avif",
+            "direct_source" => "https://dn711400.ca.archive.org/0/items/sunrise.-a.-song.-of.-two.-humans.-1927.720p.-blu-ray.x-264-hdclub-public-hd/Sunrise.A.Song.Of.Two.Humans.1927.720p.BluRay.x264-HDCLUB%20%5BPublicHD%5D.mp4"
         ]
-
-
     ]);
 } elseif ($action == 'get_vod_info') {
     $vod_id = isset($_GET['vod_id']) ? $_GET['vod_id'] : 0;
@@ -120,6 +127,18 @@ if ($action == 'get_live_streams') {
                 "rating" => "6.7",
                 "genre" => "Crime, Horror, Mystery & Thriller, Paranormal",
                 "duration" => "75 min",
+                "movie_image" => "https://images.justwatch.com/poster/354328131/s332/house-on-haunted-hill-1.avif"
+            ]
+        ]);    
+        break;        
+    case '103':
+        echo json_encode([
+            "info" => [
+                "plot" => "A married farmer falls under the spell of a slatternly woman from the city, who tries to convince him to drown his wife.",
+                "releasedate" => "1929",
+                "rating" => "8.1",
+                "genre" => "Drama, Romance, Romantic Drama",
+                "duration" => "94 min",
                 "movie_image" => "https://images.justwatch.com/poster/354328131/s332/house-on-haunted-hill-1.avif"
             ]
         ]);    
