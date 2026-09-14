@@ -24,7 +24,7 @@ if ($action == 'get_live_streams') {
             "name" => "Red Bull TV",
             "stream_type" => "live",
             "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/3/34/Red_Bull_TV_logo.svg",
-            "stream_url" => "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
+            "direct_source" => "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
