@@ -24,10 +24,17 @@ if ($action == 'get_live_streams') {
         [
             "category_id" => "3000",
             "stream_id" => 100,
-            "name" => "Night of the Living Dead",
+            "name" => "My Man godfrey",
             "stream_type" => "movie",
             "container_extension" => "mp4",
-            "direct_source" => "<unsafe_url>https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4</unsafe_url>"
+            "stream_icon" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif"
+            "direct_source" => "<unsafe_url>https://cdndirector.dailymotion.com/cdn/manifest/video/x99kkr2.m3u8?sec=a9Dp7tJ1wevzR6lRUuBXF2o9XBXXhu28vyPJT-K6cVy_-uo5_jflVqfJMnkyErgw-AVVNg9K6QifdRSY7pUkLE6fRNDYssnIbLjxqszVPQU</unsafe_url>",
+            "info" => [
+                "plot" => "Fifth Avenue socialite Irene Bullock needs a "forgotten man" to win a scavenger hunt, and no one is more forgotten than Godfrey Park, who resides in a dump by the East River. Irene hires Godfrey as a servant for her riotously unhinged family, to the chagrin of her spoiled sister, Cornelia, who tries her best to get Godfrey fired. As Irene falls for her new butler, Godfrey turns the tables and teaches the frivolous Bullocks a lesson or two.",
+                "releasedate" => "1936",
+                "rating" => "7.9",
+                "movie_image" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif"
+            ]
         ]
     ]);
 } elseif ($action == 'get_series') {
