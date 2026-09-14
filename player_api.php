@@ -91,35 +91,35 @@ if ($action == 'get_live_streams') {
             "category_id" => "2000",
             "series_id" => 5000,
             "name" => "The Beverly Hillbillies",
-            "cover" => "https://archive.org/services/img/TheBeverlyHillbilliesTheClampettsStrikeOil",
+            "stream_icon" => "https://archive.org/services/img/TheBeverlyHillbilliesTheClampettsStrikeOil",
             "plot" => "A poor backwoods family strikes oil and moves to Beverly Hills."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5001,
             "name" => "The Dick Van Dyke Show",
-            "cover" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
+            "stream_icon" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
             "plot" => "The misadventures of a TV writer both at work and at home."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5002,
             "name" => "Bonanza",
-            "cover" => "https://archive.org/services/img/BonanzaTheBloodLine",
+            "stream_icon" => "https://archive.org/services/img/BonanzaTheBloodLine",
             "plot" => "The adventures of the Cartwright family on their Nevada ranch."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5003,
             "name" => "The Lucy Show",
-            "cover" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
+            "stream_icon" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
             "plot" => "The comic misadventures of a widow and her friend."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5004,
             "name" => "Sherlock Holmes (1954)",
-            "cover" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
+            "stream_icon" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
             "plot" => "The classic detective solves mysteries in Victorian London."
         ]
     ]);
