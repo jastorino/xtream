@@ -75,7 +75,7 @@ if ($action == 'get_live_streams') {
                 "releasedate" => "1936",
                 "rating" => "7.9",
                 "genre" => "Comedy, Romance",
-                "duration" => "1h 33m",
+                "duration" => "93 min",
                 "movie_image" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif"
             ]
         ]);    
