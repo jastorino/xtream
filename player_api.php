@@ -98,7 +98,7 @@ if ($action == 'get_live_streams') {
             "category_id" => "2000",
             "series_id" => 5001,
             "name" => "The Dick Van Dyke Show",
-            "cover" => "https://archive.org/services/img/TheDickVanDykeShowTheTwizzle",
+            "cover" => "https://upload.wikimedia.org/wikipedia/en/9/93/The_Dick_Van_Dyke_Show.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
             "plot" => "The misadventures of a TV writer both at work and at home."
         ],
         [
@@ -152,14 +152,14 @@ if ($action == 'get_live_streams') {
                     ],
                     "2" => [
                         [
-                            "id" => 50037, 
+                            "id" => 500037, 
                             "title" => "Jed Gets the Misery", 
                             "season" => 2, 
                             "episode_num" => 1, 
                             "direct_source" => "https://dn720400.ca.archive.org/0/items/1ce-6aa-4d-1419f-3ea-53108b-15c-5179948-360p/030689f2423e6b68d344052806099f39-360p.mp4"
                         ],
                         [
-                            "id" => 50038, 
+                            "id" => 500038, 
                             "title" => "Hair-Raising Holiday", 
                             "season" => 2, 
                             "episode_num" => 2, 
@@ -172,15 +172,44 @@ if ($action == 'get_live_streams') {
             break;
         case 5001: // The Dick Van Dyke Show
             $response = [
-                "info" => ["name" => "The Dick Van Dyke Show", "plot" => "The misadventures of a TV writer."],
+                "info" => [
+                    "name" => "The Dick Van Dyke Show", 
+                    "plot" => "The misadventures of a TV writer."
+                ],
                 "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                "episodes" => ["1" => [["id" => 50011, "title" => "The Twizzle", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheDickVanDykeShowTheTwizzle/TheDickVanDykeShowTheTwizzle.mp4"]]]
+                "episodes" => [
+                    "1" => [
+                        [
+                            "id" => 500011, 
+                            "title" => "A Man's Teeth are not his Own", 
+                            "season" => 1, 
+                            "episode_num" => 1, 
+                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/A_MANS_TEETH_ARE_NOT_HIS_OWN.mp4"]
+                        ],
+                        [
+                            "id" => 500012, 
+                            "title" => "Give me your Walls", 
+                            "season" => 1, 
+                            "episode_num" => 2, 
+                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/GIVE_ME_YOUR_WALLS.mp4"]
+                        ],
+                        [
+                            "id" => 500013, 
+                            "title" => "Hustling the Hustler", 
+                            "season" => 1, 
+                            "episode_num" => 3, 
+                            "direct_source" => "https://dn710705.ca.archive.org/0/items/The_Dick_van_Dyke_Show/HUSTLING_THE_HUSTLER.mp4"]
+                        ]
+
+                    ]
             ];
             break;
         case 5002: // Bonanza
             $response = [
                 "info" => ["name" => "Bonanza", "plot" => "The adventures of the Cartwright family."],
-                "seasons" => [["season_number" => 1, "episode_count" => 1]],
+                "seasons" => [
+                    [
+                        "season_number" => 1, "episode_count" => 1]],
                 "episodes" => ["1" => [["id" => 50021, "title" => "The Blood Line", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/BonanzaTheBloodLine/BonanzaTheBloodLine.mp4"]]]
             ];
             break;
