@@ -47,8 +47,8 @@ if ($action == 'get_live_streams') {
             "stream_id" => 5,
             "name" => "Sky News",
             "stream_type" => "live",
-            "stream_icon" => "<unsafe_url>https://upload.wikimedia.org/wikipedia/commons/e/e7/Sky_News_2020.svg</unsafe_url>",
-            "direct_source" => "<unsafe_url>https://skynews.live.cdn.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8</unsafe_url>"
+            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sky_News_2020.svg",
+            "direct_source" => "https://skynews.live.cdn.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8"
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
