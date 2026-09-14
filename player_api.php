@@ -26,7 +26,7 @@ if ($action == 'get_live_streams') {
             "stream_id" => 100,
             "name" => "My Man godfrey",
             "stream_type" => "movie",
-            "container_extension" => "mp4",
+            "container_extension" => "mpeg",
             "stream_icon" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif",
             "direct_source" => "<unsafe_url>https://cdndirector.dailymotion.com/cdn/manifest/video/x99kkr2.m3u8?sec=a9Dp7tJ1wevzR6lRUuBXF2o9XBXXhu28vyPJT-K6cVy_-uo5_jflVqfJMnkyErgw-AVVNg9K6QifdRSY7pUkLE6fRNDYssnIbLjxqszVPQU</unsafe_url>"
         ]
