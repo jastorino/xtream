@@ -124,50 +124,49 @@ if ($action == 'get_live_streams') {
         ]
     ]);
 } elseif ($action == 'get_series_info') {
-case 'get_series_info':
-        $series_id = isset($_GET['series_id']) ? (int)$_GET['series_id'] : 0;
-        
-        $response = ["info" => [], "seasons" => [], "episodes" => []];
-        
-        switch ($series_id) {
-            case 5000: // The Beverly Hillbillies
-                $response = [
-                    "info" => ["name" => "The Beverly Hillbillies", "plot" => "A poor backwoods family strikes oil."],
-                    "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                    "episodes" => ["1" => [["id" => 50001, "title" => "The Clampetts Strike Oil", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheBeverlyHillbilliesTheClampettsStrikeOil/TheBeverlyHillbilliesTheClampettsStrikeOil.mp4"]]]
-                ];
-                break;
-            case 5001: // The Dick Van Dyke Show
-                $response = [
-                    "info" => ["name" => "The Dick Van Dyke Show", "plot" => "The misadventures of a TV writer."],
-                    "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                    "episodes" => ["1" => [["id" => 50011, "title" => "The Twizzle", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheDickVanDykeShowTheTwizzle/TheDickVanDykeShowTheTwizzle.mp4"]]]
-                ];
-                break;
-            case 5002: // Bonanza
-                $response = [
-                    "info" => ["name" => "Bonanza", "plot" => "The adventures of the Cartwright family."],
-                    "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                    "episodes" => ["1" => [["id" => 50021, "title" => "The Blood Line", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/BonanzaTheBloodLine/BonanzaTheBloodLine.mp4"]]]
-                ];
-                break;
-            case 5003: // The Lucy Show
-                $response = [
-                    "info" => ["name" => "The Lucy Show", "plot" => "The comic misadventures of a widow."],
-                    "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                    "episodes" => ["1" => [["id" => 50031, "title" => "Lucy and the Missing Stamp", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheLucyShowLucyAndTheMissingStamp/TheLucyShowLucyAndTheMissingStamp.mp4"]]]
-                ];
-                break;
-            case 5004: // Sherlock Holmes
-                $response = [
-                    "info" => ["name" => "Sherlock Holmes (1954)", "plot" => "The classic detective solves mysteries."],
-                    "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                    "episodes" => ["1" => [["id" => 50041, "title" => "The Case of the Cunningham Heritage", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/SherlockHolmesTheCaseOfTheCunninghamHeritage/SherlockHolmesTheCaseOfTheCunninghamHeritage.mp4"]]]
-                ];
-                break;
-        }
-        
-        echo json_encode($response);
+    $series_id = isset($_GET['series_id']) ? (int)$_GET['series_id'] : 0;
+    
+    $response = ["info" => [], "seasons" => [], "episodes" => []];
+    
+    switch ($series_id) {
+        case 5000: // The Beverly Hillbillies
+            $response = [
+                "info" => ["name" => "The Beverly Hillbillies", "plot" => "A poor backwoods family strikes oil."],
+                "seasons" => [["season_number" => 1, "episode_count" => 1]],
+                "episodes" => ["1" => [["id" => 50001, "title" => "The Clampetts Strike Oil", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheBeverlyHillbilliesTheClampettsStrikeOil/TheBeverlyHillbilliesTheClampettsStrikeOil.mp4"]]]
+            ];
+            break;
+        case 5001: // The Dick Van Dyke Show
+            $response = [
+                "info" => ["name" => "The Dick Van Dyke Show", "plot" => "The misadventures of a TV writer."],
+                "seasons" => [["season_number" => 1, "episode_count" => 1]],
+                "episodes" => ["1" => [["id" => 50011, "title" => "The Twizzle", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheDickVanDykeShowTheTwizzle/TheDickVanDykeShowTheTwizzle.mp4"]]]
+            ];
+            break;
+        case 5002: // Bonanza
+            $response = [
+                "info" => ["name" => "Bonanza", "plot" => "The adventures of the Cartwright family."],
+                "seasons" => [["season_number" => 1, "episode_count" => 1]],
+                "episodes" => ["1" => [["id" => 50021, "title" => "The Blood Line", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/BonanzaTheBloodLine/BonanzaTheBloodLine.mp4"]]]
+            ];
+            break;
+        case 5003: // The Lucy Show
+            $response = [
+                "info" => ["name" => "The Lucy Show", "plot" => "The comic misadventures of a widow."],
+                "seasons" => [["season_number" => 1, "episode_count" => 1]],
+                "episodes" => ["1" => [["id" => 50031, "title" => "Lucy and the Missing Stamp", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheLucyShowLucyAndTheMissingStamp/TheLucyShowLucyAndTheMissingStamp.mp4"]]]
+            ];
+            break;
+        case 5004: // Sherlock Holmes
+            $response = [
+                "info" => ["name" => "Sherlock Holmes (1954)", "plot" => "The classic detective solves mysteries."],
+                "seasons" => [["season_number" => 1, "episode_count" => 1]],
+                "episodes" => ["1" => [["id" => 50041, "title" => "The Case of the Cunningham Heritage", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/SherlockHolmesTheCaseOfTheCunninghamHeritage/SherlockHolmesTheCaseOfTheCunninghamHeritage.mp4"]]]
+            ];
+            break;
+    }
+    
+    echo json_encode($response);
 }
 } elseif ($action == 'get_vod_categories') {
     error_log("Found Action: $action");
