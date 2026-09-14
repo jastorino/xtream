@@ -15,7 +15,7 @@ if ($action == 'get_live_streams') {
             "stream_id" => 1,
             "name" => "NASA TV",
             "stream_type" => "live",
-            "stream_url" => "<unsafe_url>https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-Public/master.m3u8</unsafe_url>"
+            "direct_source" => "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-Public/master.m3u8"
         ]
     ]);
 } elseif ($action == 'get_vod_streams') {
