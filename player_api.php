@@ -91,14 +91,14 @@ if ($action == 'get_live_streams') {
             "category_id" => "2000",
             "series_id" => 5000,
             "name" => "The Beverly Hillbillies",
-            "cover" => "https://upload.wikimedia.org/wikipedia/en/4/4e/The_Beverly_Hillbillies.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+            "cover" => "https://resizing.flixster.com/5kjb42IRSeDBUctfkk0rL-Vkr3I=/164x246/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p15108_p_v10_af.jpg",
             "plot" => "A poor backwoods family strikes oil and moves to Beverly Hills."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5001,
             "name" => "The Dick Van Dyke Show",
-            "cover" => "https://upload.wikimedia.org/wikipedia/en/9/93/The_Dick_Van_Dyke_Show.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+            "cover" => "https://resizing.flixster.com/UxPN62SpdQIxfQ5i1EWeyU6HeNQ=/164x246/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p184002_b_v11_ag.jpg",
             "plot" => "The misadventures of a TV writer both at work and at home."
         ],
         [
@@ -112,14 +112,14 @@ if ($action == 'get_live_streams') {
             "category_id" => "2000",
             "series_id" => 5003,
             "name" => "The Lucy Show",
-            "cover" => "https://archive.org/services/img/TheLucyShowLucyAndTheMissingStamp",
+            "cover" => "https://resizing.flixster.com/eHarJ7bCr-YokoVSeOWGcano2T4=/164x246/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p507901_b_v10_ad.jpg",
             "plot" => "The comic misadventures of a widow and her friend."
         ],
         [
             "category_id" => "2000",
             "series_id" => 5004,
             "name" => "Sherlock Holmes (1954)",
-            "cover" => "https://archive.org/services/img/SherlockHolmesTheCaseOfTheCunninghamHeritage",
+            "cover" => "https://marvel-b1-cdn.bc0a.com/f00000000280066/cover.hoopladigital.com/qsv_5289101_640.jpeg",
             "plot" => "The classic detective solves mysteries in Victorian London."
         ]
     ]);
@@ -218,7 +218,31 @@ if ($action == 'get_live_streams') {
             $response = [
                 "info" => ["name" => "The Lucy Show", "plot" => "The comic misadventures of a widow."],
                 "seasons" => [["season_number" => 1, "episode_count" => 1]],
-                "episodes" => ["1" => [["id" => 50031, "title" => "Lucy and the Missing Stamp", "season" => 1, "episode_num" => 1, "direct_source" => "https://archive.org/download/TheLucyShowLucyAndTheMissingStamp/TheLucyShowLucyAndTheMissingStamp.mp4"]]]
+                "episodes" => [
+                    "1" => [
+                        [
+                            "id" => 500031, 
+                            "title" => "Chris Goes Steady", 
+                            "season" => 1, 
+                            "episode_num" => 1, 
+                            "direct_source" => "https://dn720400.ca.archive.org/0/items/the-lucy-show-lucy-buys-a-boat/The%20Lucy%20Show%20-%20Chris%20Goes%20Steady.mp4"
+                        ],
+                        [
+                            "id" => 500032, 
+                            "title" => "Chris New Years Eve Party", 
+                            "season" => 1, 
+                            "episode_num" => 2, 
+                            "direct_source" => "https://dn720400.ca.archive.org/0/items/the-lucy-show-lucy-buys-a-boat/The%20Lucy%20Show%20-%20Chris%20New%20Years%20Eve%20Party.mp4"
+                        ],
+                        [
+                            "id" => 500033, 
+                            "title" => "Ethel Merman and the Boy Scout Show", 
+                            "season" => 1, 
+                            "episode_num" => 3, 
+                            "direct_source" => "https://dn720400.ca.archive.org/0/items/the-lucy-show-lucy-buys-a-boat/The%20Lucy%20Show%20-%20Ethel%20Merman%20And%20The%20Boy%20Scout%20Show.mp4"
+                        ]
+                    ]
+                ]
             ];
             break;
         case 5004: // Sherlock Holmes
