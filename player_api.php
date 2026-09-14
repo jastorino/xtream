@@ -26,7 +26,7 @@ if ($action == 'get_live_streams') {
             "stream_id" => 100,
             "name" => "My Man godfrey",
             "stream_type" => "movie",
-            "container_extension" => "mpeg",
+            "container_extension" => "mov",
             "stream_icon" => "https://images.justwatch.com/poster/35151046/s332/my-man-godfrey.avif",
             "direct_source" => "<unsafe_url>https://dn710907.ca.archive.org/0/items/Mariah_Riggs_on_MY_MAN_GODFREY_1936/Mariah_Riggs_on_MY_MAN_GODFREY_1936.HD.mov</unsafe_url>"
         ]
