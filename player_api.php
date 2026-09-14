@@ -141,16 +141,30 @@ if ($action == 'get_live_streams') {
                             "season" => 1, 
                             "episode_num" => 1, 
                             "direct_source" => "https://dn710007.ca.archive.org/0/items/731d-0c-436b-6236618f-110f-67a-65cb-9d-0-360p/00efdd5717132ce3a95944dd2f83dba6-360p.mp4"
-                        ]
-                    ],
-                    "2" => [
+                        ],
                         [
                             "id" => 50002, 
                             "title" => "Getting Settled", 
                             "season" => 1, 
                             "episode_num" => 2, 
                             "direct_source" => "https://dn710007.ca.archive.org/0/items/731d-0c-436b-6236618f-110f-67a-65cb-9d-0-360p/0570d5a39fca358ee78cd3a7e3b1b30e-360p.mp4"
-                        ]
+                        ]                        
+                    ],
+                    "2" => [
+                        [
+                            "id" => 50037, 
+                            "title" => "Jed Gets the Misery", 
+                            "season" => 2, 
+                            "episode_num" => 1, 
+                            "direct_source" => "https://dn720400.ca.archive.org/0/items/1ce-6aa-4d-1419f-3ea-53108b-15c-5179948-360p/030689f2423e6b68d344052806099f39-360p.mp4"
+                        ],
+                        [
+                            "id" => 50038, 
+                            "title" => "Getting Settled", 
+                            "season" => 2, 
+                            "episode_num" => 2, 
+                            "direct_source" => "https://dn800200.us.archive.org/0/items/1ce-6aa-4d-1419f-3ea-53108b-15c-5179948-360p/11fdbb529bd768372fe784c9dee5357e-360p.mp4"
+                        ]   
                     ]
 
                 ]
