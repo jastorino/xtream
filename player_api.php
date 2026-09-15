@@ -11,7 +11,7 @@ if ($action == 'get_live_streams') {
     error_log("Found Action: $action");
     header('Content-Type: application/json');
 
-    $m3uContent = file_get_contents('https://raw.github'usercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_us.m3u);
+    $m3uContent = file_get_contents('https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_us.m3u');
     $lines = explode("\n", $m3uContent);
     $channels = [];
     $currentChannel = [];
