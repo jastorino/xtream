@@ -66,7 +66,7 @@ if ($action == 'get_live_streams') {
                 
                 $categories[] = [
                     "category_id" => $groupTitle,
-                    "category_name" => 'Pluto TV' + $groupTitle,
+                    "category_name" => "PlutoTV - " . $groupTitle,
                     "parent_id" => 0
                 ];
             }
