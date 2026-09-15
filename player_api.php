@@ -11,7 +11,7 @@ if ($action == 'get_live_streams') {
     error_log("Found Action: $action");
     header('Content-Type: application/json');
 
-    $m3uContent = file_get_contents('https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_us.m3u');
+    $m3uContent = file_get_contents('https://raw.github'usercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_us.m3u);
     $lines = explode("\n", $m3uContent);
     $channels = [];
     $currentChannel = [];
@@ -19,23 +19,23 @@ if ($action == 'get_live_streams') {
     foreach ($lines as $line) {
         $line = trim($line);
         if (strpos($line, '#EXTINF:') === 0) {
-            // Extract Group Title for Category ID
-            preg_matchreg_match('/group-title="([^"]+)"/', $line, $groupMatches);
-            $currentChannel['category_id'] = $groupMatches[1] ?? '';    
+            // Extract Name
+            preg_match('/,(.+)$/', $line, $nameMatches);
+            $currentChannel['name'] = $nameMatches[1] ?? 'Unknown';
+            
+            // Extract Logo
+            preg_match('/tvg-logo="([^"]+)"/', $line, $logoMatches);
+            $currentChannel['stream_icon'] = $logoMatches[1] ?? '';
             
             // Extract Channel Number for ID
             preg_match('/tvg-chno="([^"]+)"/', $line, $chnoMatches);
             $currentChannel['stream_id'] = (int)($chnoMatches[1] ?? rand(1000, 9999));
 
-            // Extract Name
-            preg_match('/,(.+)$/', $line, $nameMatches);
-            $currentChannel['name'] = $nameMatches[1] ?? 'Unknown';
+            // Extract Group Title for Category ID
+            preg_matchreg_match('/group-title="([^"]+)"/', $line, $groupMatches);
+            $currentChannel['category_id'] = $groupMatches[1] ?? '';    
             
             $currentChannel['stream_type'] = 'live';
-
-            // Extract Logo
-            preg_match('/tvg-logo="([^"]+)"/', $line, $logoMatches);
-            $currentChannel['stream_icon'] = $logoMatches[1] ?? '';            
         } elseif (strpos($line, 'http') === 0) {
             $currentChannel['direct_source'] = $line;
             $channels[] = $currentChannel;
