@@ -32,7 +32,7 @@ if ($action == 'get_live_streams') {
             $currentChannel['stream_id'] = (int)($chnoMatches[1] ?? rand(1000, 9999));
 
             // Extract Group Title for Category ID
-            preg_matchreg_match('/group-title="([^"]+)"/', $line, $groupMatches);
+            preg_match('/group-title="([^"]+)"/', $line, $groupMatches);
             $currentChannel['category_id'] = $groupMatches[1] ?? '';    
             
             $currentChannel['stream_type'] = 'live';
