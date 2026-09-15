@@ -9,48 +9,37 @@ error_log("IPTV Request - User: $user, Action: $action");
 
 if ($action == 'get_live_streams') {
     error_log("Found Action: $action");
-    echo json_encode([
-        [
-            "category_id" => "1000",
-            "stream_id" => 1,
-            "name" => "NASA TV",
-            "stream_type" => "live",
-            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg",
-            "direct_source" => "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8"
-        ],
-        [
-            "category_id" => "1000",
-            "stream_id" => 2,
-            "name" => "Red Bull TV",
-            "stream_type" => "live",
-            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/3/34/Red_Bull_TV_logo.svg",
-            "direct_source" => "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
-        ],
-        [
-            "category_id" => "1000",
-            "stream_id" => 3,
-            "name" => "DW English",
-            "stream_type" => "live",
-            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/9/93/Deutsche_Welle_logo.svg",
-            "direct_source" => "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8"
-        ],
-        [
-            "category_id" => "1000",
-            "stream_id" => 4,
-            "name" => "France 24 English",
-            "stream_type" => "live",
-            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/b/b5/France_24_logo.svg",
-            "direct_source" => "https://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master.m3u8"
-        ],
-        [
-            "category_id" => "1000",
-            "stream_id" => 5,
-            "name" => "Sky News",
-            "stream_type" => "live",
-            "stream_icon" => "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sky_News_2020.svg",
-            "direct_source" => "https://skynews.live.cdn.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8"
-        ]
-    ]);
+    header('Content-Type: application/json');
+
+    $m3uContent = file_get_contents('your_playlist.m3u');
+    $lines = explode("\n", $m3uContent);
+    $channels = [];
+    $currentChannel = [];
+
+    foreach ($lines as $line) {
+        $line = trim($line);
+        if (strpos($line, '#EXTINF:') === 0) {
+            // Extract Name
+            preg_match('/,(.+)$/', $line, $nameMatches);
+            $currentChannel['name'] = $nameMatches[1] ?? 'Unknown';
+            
+            // Extract Logo
+            preg_match('/tvg-logo="([^"]+)"/', $line, $logoMatches);
+            $currentChannel['stream_icon'] = $logoMatches[1] ?? '';
+            
+            // Extract Channel Number for ID
+            preg_match('/tvg-chno="([^"]+)"/', $line, $chnoMatches);
+            $currentChannel['stream_id'] = (int)($chnoMatches[1] ?? rand(1000, 9999));
+            
+            $currentChannel['stream_type'] = 'live';
+        } elseif (strpos($line, 'http') === 0) {
+            $currentChannel['direct_source'] = $line;
+            $channels[] = $currentChannel;
+            $currentChannel = [];
+        }
+    }
+
+    echo json_encode($channels);
 } elseif ($action == 'get_vod_streams') {
     error_log("Found Action: $action");
     echo json_encode([
